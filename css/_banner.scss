@@ -1,0 +1,8 @@
+.banner{
+    height: calc(100vh - 68px);
+    overflow: hidden;
+    img{
+        height: calc(100vh - 68px);
+        object-fit: cover;
+    }
+}
