@@ -79,34 +79,6 @@ header .offcanvas-body {
   justify-content: center;
 }
 
-.sp-section-top {
-  padding-top: 30px;
-}
-@media (min-width: 992px) {
-  .sp-section-top {
-    padding-top: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  .sp-section-top {
-    padding-top: 100px;
-  }
-}
-
-.sp-section-bottom {
-  padding-bottom: 30px;
-}
-@media (min-width: 992px) {
-  .sp-section-bottom {
-    padding-bottom: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  .sp-section-bottom {
-    padding-bottom: 100px;
-  }
-}
-
 .mr-5 {
   margin-right: 20px;
 }
@@ -173,4 +145,46 @@ header .offcanvas-body {
   .paragraph {
     font-size: 16px;
   }
+}
+
+.banner {
+  height: calc(100vh - 68px);
+  overflow: hidden;
+}
+.banner img {
+  height: calc(100vh - 68px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sp-section-top {
+  padding-top: 30px;
+}
+@media (min-width: 992px) {
+  .sp-section-top {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .sp-section-top {
+    padding-top: 100px;
+  }
+}
+
+.sp-section-bottom {
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .sp-section-bottom {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .sp-section-bottom {
+    padding-bottom: 100px;
+  }
+}
+
+.portfolio {
+  background: linear-gradient(180deg, #151618 0%, rgba(21, 22, 24, 0) 100%);
 }/*# sourceMappingURL=main.css.map */
