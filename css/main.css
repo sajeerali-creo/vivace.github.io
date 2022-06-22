@@ -35,6 +35,30 @@ a {
   text-decoration: none;
 }
 
+.lexury {
+  background-image: url(../img/bg-c.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-primary {
+  min-width: 130px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 20px;
+  height: 40px;
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
 .hover-rotate {
   overflow: hidden;
   width: 100%;
@@ -79,8 +103,49 @@ a {
   padding-bottom: 60px;
 }
 
+.lexuary-box {
+  width: 100%;
+  height: 458px;
+}
+.lexuary-box img {
+  width: 100%;
+  height: 458px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-strip {
+  width: 100px;
+}
+@media (min-width: 1200px) {
+  .text-strip {
+    width: auto;
+  }
+}
+
 header .logo img {
   height: 68px;
+}
+header .lg-main-menu {
+  background: #000;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .lg-main-menu {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    padding: 8px;
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  header .lg-main-menu {
+    right: 20px;
+    top: 80px;
+    padding: 10px;
+    display: block;
+  }
 }
 header .social {
   display: flex;
@@ -121,6 +186,22 @@ header .offcanvas-body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.watsap a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #27AE60;
+  border-radius: 160px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  position: fixed;
+  right: 20px;
+  top: 50%;
 }
 
 .mr-5 {
@@ -192,13 +273,33 @@ header .offcanvas-body {
 }
 
 .banner {
-  height: calc(100vh - 68px);
+  height: auto;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  .banner {
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: calc(100vh - 68px);
+  }
+}
 .banner img {
-  height: calc(100vh - 68px);
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 992px) {
+  .banner img {
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner img {
+    height: calc(100vh - 68px);
+  }
 }
 
 .sp-section-top {
@@ -231,4 +332,83 @@ header .offcanvas-body {
 
 .portfolio {
   background: linear-gradient(180deg, #151618 0%, rgba(21, 22, 24, 0) 100%);
+}
+
+.q-box {
+  width: 100%;
+  background-image: url(../img/bg-qoutes.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+}
+
+.contact-small-box {
+  background-color: var(--black);
+}
+
+.form {
+  background-color: #181a20;
+}
+
+.video-box {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.video-box img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-box .over-lay {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  padding: 40px;
+}
+.video-box .over-lay i {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 160px;
+  border: 1px solid #e1e1e1;
+  align-items: center;
+  justify-content: center;
+}
+.video-box .over-lay a {
+  color: #fff;
+  transition: all 0.3s;
+}
+.video-box .over-lay a:hover {
+  opacity: 0.6;
+}
+.video-box .over-lay .strip {
+  height: auto;
+  width: 100px;
+}
+
+footer .social li {
+  padding: 30px;
+}
+footer .bg-text {
+  background-image: url(../img/vivace.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form-control {
+  background: none !important;
+  border: 1px solid #3b3c3f;
+  font-size: 14px;
+}
+
+.form-floating > label {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

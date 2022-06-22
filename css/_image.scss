@@ -37,3 +37,20 @@
 .hover-rotate:hover .over-box{
     padding-bottom: 60px;
 }
+
+.lexuary-box{
+    width: 100%;
+    height: 458px;
+    img{
+        width: 100%;
+        height: 458px;
+        object-fit: cover;
+    }
+}
+
+.text-strip{
+    width: 100px;
+    @media (min-width: 1200px) {
+        width: auto;
+    }
+}
