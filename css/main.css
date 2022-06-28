@@ -42,6 +42,10 @@ a {
   background-size: cover;
 }
 
+.opacity-5 {
+  opacity: 0.5;
+}
+
 .btn-primary {
   min-width: 130px;
   width: -webkit-fit-content;
@@ -147,45 +151,12 @@ header .lg-main-menu {
     display: block;
   }
 }
-header .social {
-  display: flex;
-}
-header .social li a {
-  display: flex;
-  width: 39px;
-  height: 39px;
-  background-color: var(--black);
-  justify-content: center;
-  align-items: center;
-  color: var(--white);
-}
 header .language {
   width: 100px;
 }
 header .btn-menu {
   border: none;
   background: none;
-}
-header .offcanvas {
-  background-color: var(--black);
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-header .offcanvas .sm-menus li {
-  display: block;
-  text-align: center;
-  padding: 20px 0px;
-}
-header .offcanvas .sm-menus li a {
-  color: var(--white);
-  font-size: 24px;
-}
-header .offcanvas-body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .watsap a {
@@ -202,6 +173,46 @@ header .offcanvas-body {
   position: fixed;
   right: 20px;
   top: 50%;
+}
+
+.offcanvas {
+  background-color: var(--black);
+  background-image: url(../img/vivace.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.offcanvas .sm-menus li {
+  display: block;
+  text-align: center;
+  padding: 20px 0px;
+}
+.offcanvas .sm-menus li a {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.offcanvas-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+}
+.social li a {
+  display: flex;
+  width: 39px;
+  height: 39px;
+  background-color: var(--black);
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
 }
 
 .mr-5 {
@@ -399,6 +410,43 @@ footer .bg-text {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.inner {
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .inner {
+    padding: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .inner .container-xl {
+    height: 216px;
+  }
+}
+.inner a {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: right;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.about-inner {
+  background-image: url(../img/abt-banner.png);
+}
+
+.hero-intro {
+  background-image: url(../img/samples/intro-calm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  background-color: #000;
 }
 
 .form-control {

@@ -51,7 +51,7 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
         position: absolute;
         padding: 40px;
-        i{
+        i {
             display: flex;
             width: 36px;
             height: 36px;
@@ -60,31 +60,63 @@
             align-items: center;
             justify-content: center;
         }
-        a{
+        a {
             color: #fff;
             transition: all 0.3s;
-            &:hover{
+            &:hover {
                 opacity: 0.6;
             }
         }
-        .strip{
+        .strip {
             height: auto;
             width: 100px;
         }
     }
 }
 
-
-footer{
-    .social{
-        li{
+footer {
+    .social {
+        li {
             padding: 30px;
         }
     }
-    .bg-text{
+    .bg-text {
         background-image: url(../img/vivace.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
     }
+}
+
+.inner {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-width: 992px) {
+        padding: 0px;
+    }
+    .container-xl {
+        @media (min-width: 992px) {
+            height: 216px;
+        }
+    }
+    a {
+        font-size: 16px;
+        line-height: 36px;
+        text-align: right;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+    }
+}
+.about-inner {
+    background-image: url(../img/abt-banner.png);
+}
+.hero-intro{
+    background-image: url(../img/samples/intro-calm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    background-color: #000;
 }

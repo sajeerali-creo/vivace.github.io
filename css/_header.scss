@@ -21,49 +21,12 @@ header {
             display: block;
         }
     }
-    .social {
-        display: flex;
-        li {
-            a {
-                display: flex;
-                width: 39px;
-                height: 39px;
-                background-color: var(--black);
-                justify-content: center;
-                align-items: center;
-                color: var(--white);
-            }
-        }
-    }
     .language {
         width: 100px;
     }
     .btn-menu {
         border: none;
         background: none;
-    }
-    .offcanvas {
-        background-color: var(--black);
-        width: 100%;
-        display: flex;
-        align-items: center;
-        .sm-menus {
-            li {
-                display: block;
-                text-align: center;
-                padding: 20px 0px;
-                a {
-                    color: var(--white);
-                    font-size: 24px;
-                }
-            }
-        }
-    }
-    .offcanvas-body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
     }
 }
 
@@ -82,5 +45,48 @@ header {
         position: fixed;
         right: 20px;
         top: 50%;
+    }
+}
+
+.offcanvas {
+    background-color: var(--black);
+    background-image: url(../img/vivace.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .sm-menus {
+        li {
+            display: block;
+            text-align: center;
+            padding: 20px 0px;
+            a {
+                color: var(--white);
+                font-size: 24px;
+            }
+        }
+    }
+}
+.offcanvas-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    li {
+        a {
+            display: flex;
+            width: 39px;
+            height: 39px;
+            background-color: var(--black);
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+        }
     }
 }
